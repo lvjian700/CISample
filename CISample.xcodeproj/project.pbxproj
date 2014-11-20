@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49440A7D1A1DBD4E00360E7F /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = 49440A7C1A1DBD4E00360E7F /* app.js */; };
+		49440A801A1DC41700360E7F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49440A7F1A1DC41700360E7F /* NewsViewController.m */; };
 		496D33BA1A1C7D8C00D2E9E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 496D33B91A1C7D8C00D2E9E6 /* main.m */; };
 		496D33BD1A1C7D8C00D2E9E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 496D33BC1A1C7D8C00D2E9E6 /* AppDelegate.m */; };
 		496D33C01A1C7D8C00D2E9E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496D33BF1A1C7D8C00D2E9E6 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49440A7C1A1DBD4E00360E7F /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
+		49440A7E1A1DC41700360E7F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		49440A7F1A1DC41700360E7F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		496D33B41A1C7D8C00D2E9E6 /* CISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496D33B81A1C7D8C00D2E9E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496D33B91A1C7D8C00D2E9E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49440A7B1A1DBD2400360E7F /* acceptence */ = {
+			isa = PBXGroup;
+			children = (
+				49440A7C1A1DBD4E00360E7F /* app.js */,
+			);
+			path = acceptence;
+			sourceTree = SOURCE_ROOT;
+		};
 		496D33AB1A1C7D8C00D2E9E6 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +99,8 @@
 				496D33BE1A1C7D8C00D2E9E6 /* ViewController.h */,
 				496D33BF1A1C7D8C00D2E9E6 /* ViewController.m */,
 				496D33C11A1C7D8C00D2E9E6 /* Main.storyboard */,
+				49440A7E1A1DC41700360E7F /* NewsViewController.h */,
+				49440A7F1A1DC41700360E7F /* NewsViewController.m */,
 				496D33C41A1C7D8C00D2E9E6 /* Images.xcassets */,
 				496D33C61A1C7D8C00D2E9E6 /* LaunchScreen.xib */,
 				496D33B71A1C7D8C00D2E9E6 /* Supporting Files */,
@@ -105,6 +120,7 @@
 		496D33D01A1C7D8C00D2E9E6 /* CISampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				49440A7B1A1DBD2400360E7F /* acceptence */,
 				496D33D31A1C7D8C00D2E9E6 /* CISampleTests.m */,
 				496D33D11A1C7D8C00D2E9E6 /* Supporting Files */,
 			);
@@ -168,6 +184,7 @@
 				TargetAttributes = {
 					496D33B31A1C7D8C00D2E9E6 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = C85KQG8PYQ;
 					};
 					496D33CC1A1C7D8C00D2E9E6 = {
 						CreatedOnToolsVersion = 6.1;
@@ -209,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49440A7D1A1DBD4E00360E7F /* app.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +240,7 @@
 				496D33C01A1C7D8C00D2E9E6 /* ViewController.m in Sources */,
 				496D33BD1A1C7D8C00D2E9E6 /* AppDelegate.m in Sources */,
 				496D33BA1A1C7D8C00D2E9E6 /* main.m in Sources */,
+				49440A801A1DC41700360E7F /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CISample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,9 +375,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CISample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +437,7 @@
 				496D33D91A1C7D8C00D2E9E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496D33DA1A1C7D8C00D2E9E6 /* Build configuration list for PBXNativeTarget "CISampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +446,7 @@
 				496D33DC1A1C7D8C00D2E9E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
